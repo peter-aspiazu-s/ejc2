@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material'
 import { PlantillaLayoutEs } from '../../../components/layout'
-import { GaleryWorkDone, ServiceOneHeader, ServiceOneMore, WorkDone } from '../../../components/servicesPages'
+import { ServiceOneHeader, ServiceOneMore, WorkDone } from '../../../components/servicesPages'
 import { imgRoofingData } from '../../../data'
 
 const TechumbrePage: NextPage = () => {
@@ -27,12 +27,6 @@ const TechumbrePage: NextPage = () => {
           workDone={'Trabajos Realizados'}
         />
       </Container>
-      {/* <Container sx={{py:5}}>
-        <GaleryWorkDone 
-          workDone={'Work Done'}
-          imgData={imgRoofingData}
-        />
-      </Container> */}
     </PlantillaLayoutEs>
   )
 }

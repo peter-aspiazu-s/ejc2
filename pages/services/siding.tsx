@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material'
 import { PlantillaLayout } from '../../components/layout'
-import { GaleryWorkDone, ServiceTwoHeader, ServiceTwoMore, WorkDoneTwo } from '../../components/servicesPages'
+import { ServiceTwoHeader, ServiceTwoMore, WorkDoneTwo } from '../../components/servicesPages'
 import { imgSidingData } from '../../data'
 
 const SidingPage: NextPage = () => {
@@ -26,12 +26,6 @@ const SidingPage: NextPage = () => {
           workDoneTwo={'Work Done'}
         />
       </Container>
-      {/* <Container sx={{py:5}}>
-        <GaleryWorkDone 
-          workDone={'Work Done'}
-          imgData={imgSidingData}
-        />
-      </Container> */}
     </PlantillaLayout>
   )
 }
