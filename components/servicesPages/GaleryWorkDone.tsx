@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import { Grid, ImageList, ImageListItem, Typography } from '@mui/material';
+import { Grid, Paper, Typography } from '@mui/material';
 
 type ImgType = {
     img: string;
@@ -36,27 +36,41 @@ export const GaleryWorkDone: FC<GaleryWorkDoneProps> = ({
             </Typography>
         </Grid>
         <Grid item xs={12} sx={{display:{xs: 'flex', justifyContent: 'center', alingItems: 'center'}}}>
-            <ImageList 
-                sx={{ 
-                    width: {xs: 290, sm: 600, md: 900}, 
-                    height: 400,
-                    display: 'flex',
-                    flexDirection: 'row',
-                    flexWrap: 'wrap',
-                    justifyContent: 'center',
-                    alignItems: 'space-around',
-                }} gap={10} rowHeight={164}>
-                {imgData.map((item) => (
-                    <ImageListItem key={item.img} sx={{mb:{xs:20, sm:25, md: 23}}}>
+            <Grid container sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}
+                spacing={10}
+            >
+                <Grid 
+                    item 
+                    xs={12} sm={6} md={4}
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',   
+                    }}>
+                        <Paper elevation={3} sx={{
+                            width:{xs:300},
+                            height: {xs: 400},
+                            overflow: 'scroll',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',  
+                            flexDirection: 'column' 
+                        }}>
+                        {imgData.map((item) => (
                         <img
-                            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                            src={`${item.img}`}
+                            srcSet={`${item.img}`}
                             alt={item.title}
-                            loading="lazy"
+                            width={300}
                         />
-                    </ImageListItem>
-                ))}
-            </ImageList>
+                        ))}
+                    </Paper>
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
   );

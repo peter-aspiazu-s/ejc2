@@ -21,17 +21,17 @@ const SidingPage: NextPage = () => {
           serviceTwoMoreDescription2={'At EJC Home Improvement Corp in our siding service, we generate a coating that helps care for and maintain any infrastructure, making it more durable and protected from the outside.'}
         />
       </Container>
-      {/* <Container sx={{py:5}}>
+      <Container sx={{py:5}}>
         <WorkDoneTwo 
           workDoneTwo={'Work Done'}
         />
-      </Container> */}
-      <Container sx={{py:5}}>
+      </Container>
+      {/* <Container sx={{py:5}}>
         <GaleryWorkDone 
           workDone={'Work Done'}
           imgData={imgSidingData}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayout>
   )
 }

@@ -22,17 +22,17 @@ const CanalonesPage: NextPage = () => {
           serviceThreeMoreDescription3={'En el caso de necesitar reparar los canales, ya sea por consecuencias naturales o por el degaste normal, contamos con expertos en el área, para la identificación, evaluación y reparación del mismo, proporcionando el mejor resultado.'}
         />
       </Container>
-      {/* <Container sx={{py:5}}>
+      <Container sx={{py:5}}>
         <WorkDoneThree 
           workDoneThree={'Trabajos Realizados'}
         />
-      </Container> */}
-      <Container sx={{py:5}}>
+      </Container>
+      {/* <Container sx={{py:5}}>
         <GaleryWorkDone 
           workDone={'Trabajos Realizados'}
           imgData={imgGuttersData}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayoutEs>
   )
 }

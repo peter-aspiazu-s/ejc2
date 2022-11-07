@@ -22,17 +22,17 @@ const TechumbrePage: NextPage = () => {
           serviceOneMoreDescription3={'Cabe mencionar que nuestros techos y diseños tienen un valor añadido, ya que se pueden personalizar a las necesidades de nuestros clientes, con el fin de mejorar su durabilidad.'}
         />
       </Container>
-      {/* <Container sx={{py:5}}>
+      <Container sx={{py:5}}>
         <WorkDone 
           workDone={'Trabajos Realizados'}
         />
-      </Container> */}
-      <Container sx={{py:5}}>
+      </Container>
+      {/* <Container sx={{py:5}}>
         <GaleryWorkDone 
           workDone={'Work Done'}
           imgData={imgRoofingData}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayoutEs>
   )
 }

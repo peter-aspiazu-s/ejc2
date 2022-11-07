@@ -22,17 +22,17 @@ const RoofingPage: NextPage = () => {
           serviceOneMoreDescription3={'It is worth mentioning that our ceilings and designs have added value, since they can be customized to the needs of our customers, in order to improve their durability.'}
         />
       </Container>
-      {/* <Container sx={{py:5}}>
+      <Container sx={{py:5}}>
         <WorkDone 
           workDone={'Work Done'}
         />
-      </Container> */}
-      <Container sx={{py:5}}>
+      </Container>
+      {/* <Container sx={{py:5}}>
         <GaleryWorkDone 
           workDone={'Work Done'}
           imgData={imgRoofingData}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayout>
   )
 }

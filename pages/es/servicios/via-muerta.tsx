@@ -21,17 +21,17 @@ const ViaMuertaPage: NextPage = () => {
           serviceTwoMoreDescription2={'En EJC Home Improvement Corp en nuestro servicio de siding, generamos un revestimiento que ayuda al cuidado y mantenimiento de cualquier infraestructura, haciéndola más duradera y protegida del exterior.'}
         />
       </Container>
-      {/* <Container sx={{py:5}}>
+      <Container sx={{py:5}}>
         <WorkDoneTwo 
           workDoneTwo={'Trabajos Realizados'}
         />
-      </Container> */}
-      <Container sx={{py:5}}>
+      </Container>
+      {/* <Container sx={{py:5}}>
         <GaleryWorkDone 
           workDone={'Work Done'}
           imgData={imgSidingData}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayoutEs>
   )
 }

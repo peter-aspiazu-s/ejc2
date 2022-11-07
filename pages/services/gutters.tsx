@@ -22,17 +22,17 @@ const GuttersPage: NextPage = () => {
           serviceThreeMoreDescription3={'In the case of needing to repair the channels, either due to natural consequences or normal wear and tear, we have experts in the area, for the identification, evaluation and repair of the same, providing the best result.'}
         />
       </Container>
-      {/* <Container sx={{py:5}}>
+      <Container sx={{py:5}}>
         <WorkDoneThree 
           workDoneThree={'Work Done'}
         />
-      </Container> */}
-      <Container sx={{py:5}}>
+      </Container>
+      {/* <Container sx={{py:5}}>
         <GaleryWorkDone 
           workDone={'Work Done'}
           imgData={imgGuttersData}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayout>
   )
 }
